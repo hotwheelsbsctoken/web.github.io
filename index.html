@@ -8,9 +8,19 @@
     <title>HotWheels BSC Token</title>
 
     <style>
-        body {
-            background: url('img/background.jpg') no-repeat fixed center;
+        @media screen and (max-width: 600px) {
+            body {
+                background: url('img/backgroundphone.jpg') no-repeat fixed center;
+            }
         }
+
+        @media screen and (min-width: 601px) {
+            body {
+                background: url('img/background.jpg') no-repeat fixed center;
+            }
+        }
+
+
 
         button,
         button::after {
@@ -116,32 +126,65 @@
             margin-bottom: 20px;
             margin-top: 20px;
         }
+
         #particles-js {
 
-  position: fixed;
-  height: 100%;
-  width: 100%;
+            position: fixed;
+            height: 100%;
+            width: 100%;
 
-}
-img {
-  animation: shake 3s;
-  animation-iteration-count: infinite;
-}
+        }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+        img {
+            animation: shake 3s;
+            animation-iteration-count: infinite;
+        }
 
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
     </style>
 </head>
 
@@ -152,25 +195,26 @@ img {
         <img src="img/logo.png" height="150" width="500">
         <div style="width:2px; height: 100px;"></div>
 
-    <div class="container">
-        <button>BSC SCAN</button>
-    </div>
-    <div class="container">
-        <button>POO COIN</button>
-    </div>
-    <div class="container">
-        <button>TELEGRAM</button>
-    </div>
-    <div style="width:2px; height: 70px;"></div>
+        <div class="container">
+            <button>BSC SCAN</button>
+        </div>
+        <div class="container">
+            <button>POO COIN</button>
+        </div>
+        <div class="container">
+            <button>TELEGRAM</button>
+        </div>
+        <div style="width:2px; height: 70px;"></div>
 
-    <marquee direction="left" 
-        style="border:rgb(255, 238, 238) 2px SOLID; color: rgb(255, 255, 255); font-size: 20px;">
-        Welcome to HotWheels BSC Token. This is an launch for hyping historical toys of HotWheels at the first stage only for hype! You are welcome! Launch Infortmation can be found on our Telegram group.
-    </marquee>
+        <marquee direction="left"
+            style="border:rgb(255, 238, 238) 2px SOLID; color: rgb(255, 255, 255); font-size: 20px;">
+            Welcome to HotWheels BSC Token. This is an launch for hyping historical toys of HotWheels at the first stage
+            only for hype! You are welcome! Launch Infortmation can be found on our Telegram group.
+        </marquee>
 
 
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
