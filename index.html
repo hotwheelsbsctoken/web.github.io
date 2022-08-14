@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <title>HotWheels BSC Token</title>
 
     <style>
@@ -201,6 +203,7 @@
                 width: 2px;
                 height: 100px;
             }
+
         }
 
 
@@ -210,15 +213,137 @@
                 width: 2px;
                 height: 2000px;
             }
+
         }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(103, 63, 39);
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #f60000;
+}
+
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+thead, tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid purple;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e495e4;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #ff33cc;
+}
+
+caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
     </style>
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    <ul>
+        <li><a class="active" href="#home">MAIN</a></li>
+        <li><a href="#news">TOKENOMICS</a></li>
+        <li><a href="#contact">ROADMAP</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div id="particles-js"></div>
 
     <div class="container">
-        <img src="img/logo.png" height="150" width="500">
+        <img src="img/logo.png" height="120" width="433">
         <div class="desk"></div>
 
         <div class="container">
@@ -230,8 +355,47 @@
         <div class="container">
             <button>TELEGRAM</button>
         </div>
-        <div style="width:2px; height: 70px;"></div>
-
+        <div style="width:2px; height: 30px;"></div>
+        <table>
+            <caption>A summary of the UK's most famous punk bands</caption>
+            <thead>
+              <tr>
+                <th scope="col">Band</th>
+                <th scope="col">Year formed</th>
+                <th scope="col">No. of Albums</th>
+                <th scope="col">Most famous song</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Buzzcocks</th>
+                <td>1976</td>
+                <td>9</td>
+                <td>Ever fallen in love (with someone you shouldn't've)</td>
+              </tr>
+              <tr>
+                <th scope="row">The Clash</th>
+                <td>1976</td>
+                <td>6</td>
+                <td>London Calling</td>
+              </tr>
+          
+              <!-- several other great bands -->
+          
+              <tr>
+                <th scope="row">The Stranglers</th>
+                <td>1974</td>
+                <td>17</td>
+                <td>No More Heroes</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total albums</th>
+                <td colspan="2">77</td>
+              </tr>
+            </tfoot>
+          </table>
         <marquee direction="left"
             style="border:rgb(255, 238, 238) 2px SOLID; color: rgb(255, 255, 255); font-size: 20px;">
             Welcome to HotWheels BSC Token. This is an launch for hyping historical toys of HotWheels at the first stage
