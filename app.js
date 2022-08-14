@@ -16,9 +16,9 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 10,
+        "value": 100,
         "density": {
-          "enable": true,
+          "enable": false,
           "value_area": 100
         }
       },
